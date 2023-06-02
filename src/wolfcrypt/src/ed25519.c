@@ -34,7 +34,7 @@
 #include <wolfssl/wolfcrypt/ed25519.h>
 #include <wolfssl/wolfcrypt/error-crypt.h>
 #include <wolfssl/wolfcrypt/hash.h>
-#ifdef NO_INLINE
+#ifdef NO_INLINE_HK
     #include <wolfssl/wolfcrypt/misc.h>
 #else
     #define WOLFSSL_MISC_INCLUDED

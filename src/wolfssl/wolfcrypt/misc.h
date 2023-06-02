@@ -33,7 +33,7 @@
 #endif
 
 
-#ifdef NO_INLINE
+#ifdef NO_INLINE_HK
 WOLFSSL_LOCAL
 word32 rotlFixed(word32, word32);
 WOLFSSL_LOCAL
@@ -91,7 +91,7 @@ void ato24(const byte* c, word32* u24);
 void ato32(const byte* c, word32* u32);
 word32 btoi(byte b);
 
-#endif /* NO_INLINE */
+#endif /* NO_INLINE_HK */
 
 
 #ifdef __cplusplus

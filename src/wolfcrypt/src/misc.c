@@ -34,19 +34,19 @@
 /* inlining these functions is a huge speed increase and a small size decrease,
    because the functions are smaller than function call setup/cleanup, e.g.,
    md5 benchmark is twice as fast with inline.  If you don't want it, then
-   define NO_INLINE and compile this file into wolfssl, otherwise it's used as
+   define NO_INLINE_HK and compile this file into wolfssl, otherwise it's used as
    a source header
  */
 
-#ifdef NO_INLINE
+#ifdef NO_INLINE_HK
     #define STATIC
 #else
     #define STATIC static
 #endif
 
 /* Check for if compiling misc.c when not needed. */
-#if !defined(WOLFSSL_MISC_INCLUDED) && !defined(NO_INLINE)
-    #warning misc.c does not need to be compiled when using inline (NO_INLINE not defined)
+#if !defined(WOLFSSL_MISC_INCLUDED) && !defined(NO_INLINE_HK)
+    #warning misc.c does not need to be compiled when using inline (NO_INLINE_HK not defined)
 
 #else
 
@@ -298,6 +298,6 @@ STATIC INLINE word32 btoi(byte b)
 
 #undef STATIC
 
-#endif /* !WOLFSSL_MISC_INCLUDED && !NO_INLINE */
+#endif /* !WOLFSSL_MISC_INCLUDED && !NO_INLINE_HK */
 
 #endif /* WOLF_CRYPT_MISC_C */

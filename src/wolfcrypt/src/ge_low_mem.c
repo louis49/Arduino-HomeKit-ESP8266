@@ -33,7 +33,7 @@
 
 #include <wolfssl/wolfcrypt/ge_operations.h>
 #include <wolfssl/wolfcrypt/error-crypt.h>
-#ifdef NO_INLINE
+#ifdef NO_INLINE_HK
     #include <wolfssl/wolfcrypt/misc.h>
 #else
     #define WOLFSSL_MISC_INCLUDED

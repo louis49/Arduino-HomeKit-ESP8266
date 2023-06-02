@@ -88,7 +88,7 @@
     #endif
 
     /* if defined to not using inline then declare function prototypes */
-    #ifdef NO_INLINE
+    #ifdef NO_INLINE_HK
         #define STATIC
 		#ifdef WOLFSSL_DEBUG_MEMORY
 			WOLFSSL_LOCAL void* TrackMalloc(size_t sz, const char* func, unsigned int line);

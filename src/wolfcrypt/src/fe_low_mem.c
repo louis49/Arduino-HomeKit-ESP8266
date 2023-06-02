@@ -34,7 +34,7 @@
 
 #include <wolfssl/wolfcrypt/fe_operations.h>
 
-#ifdef NO_INLINE
+#ifdef NO_INLINE_HK
     #include <wolfssl/wolfcrypt/misc.h>
 #else
     #define WOLFSSL_MISC_INCLUDED

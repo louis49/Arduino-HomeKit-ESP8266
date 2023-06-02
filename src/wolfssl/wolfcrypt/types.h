@@ -127,7 +127,7 @@
 
 	/* use inlining if compiler allows */
 	#ifndef INLINE
-	#ifndef NO_INLINE
+	#ifndef NO_INLINE_HK
 	    #ifdef _MSC_VER
 	        #define INLINE __inline
 	    #elif defined(__GNUC__)

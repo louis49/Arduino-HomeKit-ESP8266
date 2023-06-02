@@ -89,7 +89,7 @@ int wc_RNG_GenerateByte(WC_RNG* rng, byte* b)
 #include <wolfssl/wolfcrypt/error-crypt.h>
 #include <wolfssl/wolfcrypt/sha256.h>
 
-#ifdef NO_INLINE
+#ifdef NO_INLINE_HK
     #include <wolfssl/wolfcrypt/misc.h>
 #else
     #define WOLFSSL_MISC_INCLUDED

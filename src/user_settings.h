@@ -24,7 +24,7 @@ static inline int hwrand_generate_block(uint8_t *buf, size_t len) {
 #define NO_WOLFSSL_DIR
 #define SINGLE_THREADED
 #define WOLFSSL_LWIP
-#define NO_INLINE
+#define NO_INLINE_HK
 
 #define NO_WOLFSSL_MEMORY
 #define MP_LOW_MEM
